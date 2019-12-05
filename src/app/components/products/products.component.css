@@ -1,11 +1,10 @@
 .lt {
-    text-decoration: line-through;
+  text-decoration: line-through;
+  color: dimgray;
 }
-
 .product-image {
-    height: 200px;
+  height: 200px;
 }
 .product-prices {
-    height: 55px;
-    /* border: solid 1px red; */
+  height: 55px;
 }

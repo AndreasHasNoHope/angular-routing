@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from "@angular/common/http"
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-products',
@@ -16,11 +17,10 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get("http://localhost:3000/products")
+    this.http.get('http://localhost:3000/products')
       .subscribe(response => {
         this.products = response;
       });
-
   }
 
 }

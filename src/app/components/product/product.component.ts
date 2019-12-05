@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import {log} from 'util';
 
 @Component({
   selector: 'app-product',
@@ -19,14 +20,11 @@ export class ProductComponent implements OnInit {
   ngOnInit() {
 
     this.route.params.subscribe(params => {
-        
-        this.http.get("http://localhost:3000/product/" + params.productId)
+        this.http.get('http://localhost:3000/product/' + params.productId)
           .subscribe(response => {
             this.product = response;
+            //console.log(response);
           });
-
     });
-
   }
-
 }

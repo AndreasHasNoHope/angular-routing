@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
       style: null
     },
     {
-      title: "Domna",
+      title: "Cool",
       style: [
         {
           "featureType": "water",
@@ -306,7 +306,7 @@ export class ContactComponent implements OnInit {
       ]
     },
     {
-      title: "Gagnam",
+      title: "Guy",
       style: [
         {
           "featureType": "all",
